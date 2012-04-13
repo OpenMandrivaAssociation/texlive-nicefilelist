@@ -1,11 +1,11 @@
-# revision 25746
+# revision 25778
 # category Package
 # catalog-ctan /macros/latex/contrib/nicefilelist
-# catalog-date 2012-03-26 16:13:38 +0200
+# catalog-date 2012-03-29 17:25:27 +0200
 # catalog-license lppl1.3
-# catalog-version 0.1
+# catalog-version 0.2
 Name:		texlive-nicefilelist
-Version:	0.1
+Version:	0.2
 Release:	1
 Summary:	Provide \listfiles alignment
 Group:		Publishing
