@@ -1,16 +1,17 @@
-# revision 26551
+# revision 28018
 # category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
+# catalog-ctan /macros/latex/contrib/nicefilelist
+# catalog-date 2012-10-13 10:27:40 +0200
+# catalog-license lppl1.3
+# catalog-version 0.6
 Name:		texlive-nicefilelist
-Version:	20120808
+Epoch:		1
+Version:	0.6
 Release:	1
-Summary:	TeXLive nicefilelist package
+Summary:	Provide \listfiles alignment
 Group:		Publishing
-URL:		http://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
+URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nicefilelist
+License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.source.tar.xz
@@ -20,7 +21,11 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-TeXLive nicefilelist package.
+The package extends longnamefilelist, keeping separate columns
+for date, version and "caption" (the caption now separately
+listed). Alignment is not disturbed by short file name
+extensions, such as ".fd". The package is not compatible with
+longnamefilelist: users need to re-read the documentation.
 
 %post
     %{_sbindir}/texlive.post
