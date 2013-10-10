@@ -1,11 +1,12 @@
-# revision 25778
+# revision 28527
 # category Package
 # catalog-ctan /macros/latex/contrib/nicefilelist
-# catalog-date 2012-03-29 17:25:27 +0200
+# catalog-date 2012-12-13 11:39:24 +0100
 # catalog-license lppl1.3
-# catalog-version 0.2
+# catalog-version 0.7a
 Name:		texlive-nicefilelist
-Version:	0.2
+Epoch:		1
+Version:	0.7a
 Release:	1
 Summary:	Provide \listfiles alignment
 Group:		Publishing
@@ -36,6 +37,7 @@ longnamefilelist: users need to re-read the documentation.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/latex/nicefilelist/nicefilelist.RLS
 %{_texmfdistdir}/tex/latex/nicefilelist/nicefilelist.sty
 %doc %{_texmfdistdir}/doc/latex/nicefilelist/README
 %doc %{_texmfdistdir}/doc/latex/nicefilelist/SrcFILEs.txt
@@ -56,15 +58,3 @@ longnamefilelist: users need to re-read the documentation.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2-1
-+ Revision: 790730
-- Update to latest release.
-
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 787694
-- Import texlive-nicefilelist
-- Import texlive-nicefilelist
-
