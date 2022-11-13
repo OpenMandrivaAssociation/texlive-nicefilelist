@@ -1,20 +1,14 @@
-# revision 28527
-# category Package
-# catalog-ctan /macros/latex/contrib/nicefilelist
-# catalog-date 2012-12-13 11:39:24 +0100
-# catalog-license lppl1.3
-# catalog-version 0.7a
 Name:		texlive-nicefilelist
 Epoch:		1
-Version:	0.7a
-Release:	10
+Version:	28527
+Release:	1
 Summary:	Provide \listfiles alignment
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nicefilelist
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ extensions, such as ".fd". The package is not compatible with
 longnamefilelist: users need to re-read the documentation.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +45,8 @@ longnamefilelist: users need to re-read the documentation.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
