@@ -1,7 +1,7 @@
 Name:		texlive-nicefilelist
 Epoch:		1
 Version:	28527
-Release:	1
+Release:	2
 Summary:	Provide \listfiles alignment
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nicefilelist
