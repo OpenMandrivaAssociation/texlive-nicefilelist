@@ -4,7 +4,7 @@ Version:	28527
 Release:	2
 Summary:	Provide \listfiles alignment
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nicefilelist
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/nicefilelist
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nicefilelist.doc.r%{version}.tar.xz
